@@ -1,0 +1,119 @@
+# 📊 Retail Analytics & RFM Customer Intelligence Dashboard
+
+An end-to-end retail analytics dashboard built with **Python** and **Streamlit**, analyzing 500,000+ e-commerce transactions to surface business performance metrics and customer-level insights through RFM (Recency, Frequency, Monetary) segmentation.
+
+Built as a data analyst portfolio project using the UCI **Online Retail** dataset — a real transactional dataset from a UK-based online gift retailer.
+
+---
+
+## 🚀 Live Features
+
+### 📈 Page 1 — Business Overview
+- Key metrics: **Total Revenue, Total Customers, Average Order Value, Return Rate**
+- Monthly **revenue trend** analysis
+- **Geographic breakdown** across 30+ countries
+- **Top-performing products** and **category-wise revenue** analysis
+- Interactive country filter
+
+### 👤 Page 2 — Customer RFM Analysis
+- **RFM segmentation** of every customer (Champions, Loyal Customers, At Risk, Lost, New Customers, etc.)
+- **Searchable customer lookup** with segment filtering
+- Individual **RFM score radar chart**
+- **Personalized marketing recommendations** based on customer segment
+- Full customer profile: location, purchase history, financial summary
+- Top products and category breakdown per customer
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| Language | Python |
+| Data Processing | Pandas, NumPy |
+| Visualization | Plotly |
+| Web App Framework | Streamlit |
+| Data Source | UCI Machine Learning Repository — Online Retail Dataset |
+
+---
+
+## 📂 Project Structure
+
+```
+retail-analytics-dashboard/
+│
+├── app.py                          # Page 1 - Business Overview (main entry point)
+├── data_prep.py                    # Data cleaning, RFM computation, category logic
+├── theme.py                        # Custom UI theme & styling components
+├── requirements.txt                # Python dependencies
+├── pages/
+│   └── 1_Customer_RFM_Analysis.py  # Page 2 - Customer RFM Analysis
+└── README.md
+```
+
+> **Note:** The dataset file (`Online_Retail.xlsx`) is not included in this repository due to file size. See setup instructions below.
+
+---
+
+## 📊 What is RFM Analysis?
+
+RFM is a customer segmentation technique based on three metrics:
+
+- **Recency** — How recently did the customer purchase?
+- **Frequency** — How often do they purchase?
+- **Monetary** — How much do they spend?
+
+Each customer is scored 1–5 on each metric and grouped into actionable segments like *Champions*, *At Risk*, and *Lost* — enabling targeted, data-driven marketing strategies instead of one-size-fits-all campaigns.
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Manojmp7676/retail-analytics-dashboard.git
+cd retail-analytics-dashboard
+```
+
+### 2. Add the dataset
+Download the **Online Retail Dataset** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail) and place it in the project's root folder as `Online_Retail.xlsx`.
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the app
+```bash
+streamlit run app.py
+```
+
+The dashboard will open at `http://localhost:8501`.
+
+---
+
+## 📌 Key Skills Demonstrated
+
+- Data cleaning & preprocessing (handling cancellations, missing values, outliers)
+- Exploratory data analysis (EDA)
+- Customer segmentation (RFM analysis)
+- Interactive dashboard design & UX
+- Business metric derivation (AOV, return rate, revenue trends)
+- Python data visualization with Plotly
+
+---
+
+## 👤 Author
+
+**Manoj M P**
+📍 Bengaluru, India
+🎓 MCA (Data Science) — Alliance University
+ [GitHub](https://github.com/Manojmp7676)
+
+*Actively seeking Data Analyst / BI Developer / SQL Analyst roles.*
+
+---
+
+## 📄 License
+
+This project is open source and available for learning purposes. Dataset sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail).
